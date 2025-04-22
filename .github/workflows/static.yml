@@ -69,6 +69,8 @@ jobs:
       # Generate old versions
       - name: Generate pages for old versions
         run: python ./gh_pages/versions.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
       # Setup Pages
       - name: Setup Pages
