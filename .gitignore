@@ -20,7 +20,4 @@ deduce-release.zip
 # Generated content for site
 gh_pages/pages
 gh_pages/deduce-code
-
-# only keep main site version pushed to main
-gh_pages/versions/*
-!gh_pages/versions/main
+gh_pages/versions/
