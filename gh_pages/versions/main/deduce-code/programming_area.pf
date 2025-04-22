@@ -1,0 +1,5 @@
+
+
+fun area(h:Nat, w:Nat) {
+  h * w
+}

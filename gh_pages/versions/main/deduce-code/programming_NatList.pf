@@ -1,0 +1,6 @@
+
+
+union NatList {
+  Empty
+  Node(Nat, NatList)
+}

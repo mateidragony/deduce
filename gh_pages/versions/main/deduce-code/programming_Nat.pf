@@ -1,0 +1,6 @@
+
+
+union Nat {
+  zero
+  suc(Nat)
+}

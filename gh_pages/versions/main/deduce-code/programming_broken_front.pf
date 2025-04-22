@@ -1,0 +1,7 @@
+
+
+fun broken_front(ls : NatList) {
+  switch ls { 
+    case Empty { @none<Nat> } 
+  }
+}

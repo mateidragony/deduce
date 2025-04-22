@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Deduce is an automated proof checker meant for use in education to help students">
+    <meta name="keywords" content="Deduce, Proof, Programming">
+    <meta name="author" content="Jeremy Siek">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deduce | Home</title>
+
+    <!-- Social cards -->
+    <meta property="og:url" content="https://jsiek.github.io/deduce/pages/index.html" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Deduce | Home" />
+    <meta property="og:description" content="Deduce is an automated proof checker meant for use in education to help students" />
+    <meta property="og:site_name" content="Deduce">
+    <meta property="og:image" content="https://jsiek.github.io/deduce/images/logo.svg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deduce | Home">
+    <meta name="twitter:description" content="Deduce is an automated proof checker meant for use in education to help students">
+    <meta name="twitter:image" content="https://jsiek.github.io/deduce/images/logo.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7005573326.js" crossorigin="anonymous"></script>
+
+    <!-- My stylesheets -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link id="stylesheet" rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="container md index">
+        <deduce-nav>
+            <!-- custom component defined in script.js -->
+        </deduce-nav>
+    <!-- 
+How index generation works:
+  For the most part this is just a regular  markdown file
+  However, there's extra "comments" to specify the structure
+  of the html content. 
+
+  Any links to images or pages should be relative to the gh_pages 
+  directory, not the gh_pages/doc  directory. Do not link to 
+  '../pages/blah'. Instead  link to './pages/blah'
+
+There are four kinds of html "comments":
+  - section : to separate large sections of the page
+  - block   : next level separation within sections
+  - figure  : next level separation within block
+  - buttons : to create inline button groups
+
+The syntax for the html "comments" is as follows:
+  Start a type of divider with the name of the divider along with
+  a potential class name. example:
+
+    type
+      or
+    type: blah
+
+  Then end that divider with end followed by the name of the type
+  example:
+
+    end type
+
+There are four main sections whose structure should NOT change:
+
+Header:
+  Header contains a block with two bold headers and a button 
+  group. You can add as many links to the button group as you 
+  want! The header also contains an extra side image (the logo)
+
+About:
+  About contains two blocks which each contain a figure and a
+  code block. This section appears with a gray background
+
+Blocks:
+  Blocks is the 4 information blocks that appear in a grid on
+  the site. Each block in blocks contains a header, some text
+  and a button group (again this group can have as many buttons
+  as you want (just make sure they fit in the page))
+
+Example:
+  Example contains a bold header, some text, and a large code
+  block. This section also appears with a gray background.
+
+You can add as many additional sections as you want. For example,
+the credits section, but I wouldn't recommend adding blocks or
+figures within them since no css rules are written for that.
+Feel free to add as many paragraphs and lists as you want!
+
+
+-->
+
+<!-- section: header -->
+<!-- block -->
+<h1 id="a-proof-checker-meant-for-education">A proof checker meant for education</h1>
+<h2 id="teaching-correctness-proofs-of-functional-programs-to-students">Teaching correctness proofs of functional programs to students.</h2>
+<!-- buttons -->
+<p><a href="./pages/getting-started.html#" target="_self">Get Started</a>
+<a href="./sandbox.html#" target="_self">Live Code</a></p>
+<!-- end buttons -->
+<!-- end block -->
+
+<p><img alt="Deduce hippopotamus logo" src="./images/logo.svg" /></p>
+<!-- end section -->
+
+<!-- section: about -->
+<!-- block -->
+<!-- figure -->
+<h2 id="what-is-deduce">What is Deduce?</h2>
+<p>Deduce is an automated proof checker meant for use in education to help students:</p>
+<ul>
+<li>Ease their way into proving the correctness of programs.</li>
+<li>Deepening their understanding of logic.</li>
+<li>Improve their ability to write mathematical proofs.</li>
+</ul>
+<!-- end figure -->
+
+<div class="code-wrapper"><code id="index_home_example1"><!-- Generated by codeUtils.js --></code></div>
+<!-- end block -->
+
+<!-- block -->
+
+<div class="code-wrapper"><code id="index_home_example2"><!-- Generated by codeUtils.js --></code></div>
+<!-- figure -->
+<h2 id="who-can-use-deduce">Who can use Deduce?</h2>
+<p>The intended audience is students with (roughly) the following background knowledge and skills:</p>
+<ul>
+<li>Basic programming skills in a mainstream language such as Java, Python, or C++</li>
+<li>Some exposure to logic, as one would learn in a course on Discrete Mathematics</li>
+</ul>
+<!-- end figure -->
+<!-- end block -->
+<!-- end section -->
+
+<!-- section: blocks -->
+<!-- block -->
+<h2 id="get-started">Get Started</h2>
+<p>Get started by installing the necessary prerequisites and downloading the Deduce source code.</p>
+<p>You can also find handy information on setting up your Deduce workspace.</p>
+<!-- buttons -->
+<p><a href="./pages/getting-started.html#" target="_self">Get Started</a></p>
+<!-- end buttons -->
+<!-- end block -->
+
+<!-- block -->
+<h2 id="write-deduce-code">Write Deduce Code</h2>
+<p>Go through a series of examples to familiarize yourself with Deduce functional programming.</p>
+<p>Check your understanding with exercises to test your knowledge of the language.</p>
+<!-- buttons -->
+<p><a href="./pages/deduce-programming.html#" target="_self">Start Programming</a></p>
+<!-- end buttons -->
+<!-- end block -->
+
+<!-- block -->
+<h2 id="prove-your-programs">Prove Your Programs</h2>
+<p>Follow a detailed tutorial to learn how to write logical proofs using Deduce effectively.</p>
+<p>Explore all of the features of the Deduce proof language in this comprehensive guide.</p>
+<!-- buttons -->
+<p><a href="./pages/deduce-proofs.html#" target="_self">Start Proving</a></p>
+<!-- end buttons -->
+<!-- end block -->
+
+<!-- block -->
+<h2 id="need-help">Need Help?</h2>
+<p>The Deduce Reference manual provides an alphabetical list of all the features in Deduce.</p>
+<p>The Cheat Sheet gives some advice regarding proof strategy and which Deduce keyword to use next in a proof.</p>
+<!-- buttons -->
+<p><a href="./pages/reference.html#" target="_self">Reference Manual</a>
+<a href="./pages/cheat-sheet.html#" target="_self">Cheat Sheet</a></p>
+<!-- end buttons -->
+<!-- end block -->
+<!-- end section -->
+
+<!-- section: example -->
+<h2 id="example-proof">Example Proof</h2>
+<p>As a taster for what it looks like to write programs and proofs in Deduce, the following is an implementation of the <strong>Linear Search</strong> algorithm and a proof that item <code class="inline">y</code> does not occur in the list <code class="inline">xs</code> at a position before the index returned by <code class="inline">search(xs, y)</code></p>
+<div class="code-wrapper"><code id="index_home_example3"><!-- Generated by codeUtils.js --></code></div>
+<!-- end section -->
+
+<!-- section: credits -->
+<h2 id="credits">Credits</h2>
+<p>This open-source software is brought to you by the volunteer work of the following people. </p>
+<ul>
+<li>Matei Cloteaux</li>
+<li>Shulin Gonsalves</li>
+<li>Calvin Josenhans</li>
+<li>Jeremy Siek</li>
+</ul>
+<!-- end section -->
+
+<!--
+
+!!!{.deduce^file=Index.pf} 
+&lt;&lt;home_example3&gt;&gt;
+&lt;&lt;home_example2&gt;&gt;
+!!!
+
+
+-->
+        <deduce-footer>
+            <!-- custom component defined in script.js -->
+        </deduce-footer>
+    </div>
+
+
+    <script src="../js/cache.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/code.js"></script>
+    <script src="../js/codeUtils.js"></script>
+</body>
+
+</html>
+    

@@ -1,0 +1,10 @@
+
+
+import Option
+
+fun front(ls : NatList) {
+  switch ls {
+    case Empty { @none<Nat> }
+    case Node(x, ls') { just(x) }
+  }
+}

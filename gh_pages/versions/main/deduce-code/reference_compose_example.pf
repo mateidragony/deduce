@@ -1,0 +1,3 @@
+
+
+assert (suc ∘ suc)(3) = 5

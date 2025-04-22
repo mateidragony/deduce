@@ -1,0 +1,3 @@
+
+
+define L12 = node(1, node(2, empty))

@@ -1,0 +1,4 @@
+
+
+define operator ∘ = generic T,U,V { fun g:fn U->V, f:fn T->U {
+                        fun x:T { g(f(x)) } } }

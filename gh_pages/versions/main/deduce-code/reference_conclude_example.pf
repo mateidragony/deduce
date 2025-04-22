@@ -1,0 +1,6 @@
+
+
+theorem conclude_example: 1 + 1 = 2
+proof
+  conclude 1 + 1 = 2 by definition {operator+,operator+}
+end

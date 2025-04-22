@@ -1,0 +1,3 @@
+
+
+define empty_nat_list = @empty<Nat>
