@@ -6,7 +6,7 @@ import subprocess
 
 pages_path = './gh_pages'
 
-index_contents = '''
+index_contents = lambda v: f'''
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +36,7 @@ index_contents = '''
 
 <body>
 	<script type="text/javascript">
-	 window.location.replace("./versions/main/index.html")
+	 window.location.replace("./versions/{v}/index.html")
 	</script>
 </body>
 
@@ -131,7 +131,10 @@ if __name__ == '__main__':
             shutil.move(os.path.join(pages_path, f),
                         os.path.join(main_dir, f))
 
-    # Generate redirecting index page
+    # get latest version
+    latest = make_request(f'{url}/latest').json()
+            
+    # Generate redirecting index page to latest version
     with open(os.path.join(pages_path, 'index.html'), 'w') as f:
-        f.write(index_contents)
+        f.write(index_contents(latest['tag_name']))
     
